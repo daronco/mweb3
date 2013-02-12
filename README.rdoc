@@ -1,0 +1,5 @@
+In development, come back later...
+
+    bundle install
+    bundle exec rake setup:full
+    rails s

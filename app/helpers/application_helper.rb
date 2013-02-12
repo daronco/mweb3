@@ -24,7 +24,7 @@ module ApplicationHelper
 
   # Ex: asset_exists?('news/edit', 'css')
   def asset_exists?(asset_name, default_ext)
-    !BigbluebuttonRailsPlayground::Application.assets.find_asset(asset_name + '.' + default_ext).nil?
+    !Mweb3::Application.assets.find_asset(asset_name + '.' + default_ext).nil?
   end
 
   # Includes javascripts for the current controller

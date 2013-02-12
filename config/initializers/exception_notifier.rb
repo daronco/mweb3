@@ -26,7 +26,7 @@ def configure_exception_notifier
   # accepts " ", "," and ";" as separators
   recvs = site.exception_notifications_email.split(/[\s,;]/).reject(&:empty?)
 
-  BigbluebuttonRailsPlayground::Application.config.middleware.use ExceptionNotifier,
+  Mweb3::Application.config.middleware.use ExceptionNotifier,
     :email_prefix => site.exception_notifications_prefix + " ",
     :sender_address => get_sender_address(),
     :exception_recipients => recvs

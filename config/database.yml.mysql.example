@@ -2,7 +2,7 @@
 #
 development:
   adapter: mysql2
-  database: bbbrails_dev
+  database: mweb3_dev
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
@@ -12,14 +12,14 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: mysql2
-  database: bbbrails_test
+  database: mweb3_test
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock
 
 production:
   adapter: mysql2
-  database: bbbrails_production
+  database: mweb3_production
   username: root
   password:
   socket: /var/run/mysqld/mysqld.sock

@@ -15,7 +15,7 @@ test:
 
 production:
   adapter: mysql2
-  database: mconf_production
-  username: mconf
+  database: mweb3_production
+  username: mweb3
   password: mysecretpass
   socket: /var/run/mysqld/mysqld.sock

@@ -1,4 +1,4 @@
-BigbluebuttonRailsPlayground::Application.routes.draw do
+Mweb3::Application.routes.draw do
 
   get "home", :to => "home#show", :as => "home"
   root :to => "frontpage#show"

@@ -10,7 +10,7 @@ require File.expand_path('../config/application', __FILE__)
 desc 'Default: run specs and features.'
 task :default => ["db:test:prepare", "db:seed", :spec, :cucumber]
 
-BigbluebuttonRailsPlayground::Application.load_tasks
+Mweb3::Application.load_tasks
 
 # conditional load so it doesn't fail when in production
 begin

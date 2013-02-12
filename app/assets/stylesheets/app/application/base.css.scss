@@ -341,18 +341,17 @@ html, body {
   height: $footer-total-height;
 }
 
-#upper-footer-wrapper {
-  height: $footer-upper-height;
-  border-top: 1px solid darken($upper-footer-bg-color, 8);
-  border-bottom: 1px solid darken($upper-footer-bg-color, 8);
-  background: $upper-footer-bg-color;
+#footer-wrapper {
+  height: $footer-height;
+  border-top: 1px solid darken($footer-bg-color, 8);
+  background: $footer-bg-color;
   color: #444;
   clear: both;
   padding: 10px 0;
   margin-top: 20px;
 }
 
-#upper-footer {
+#footer {
   @include mconf-clearfix;
   max-width: $contents-width;
   padding: 0 10px;
@@ -367,7 +366,7 @@ html, body {
     @include mconf-font-size(normal);
     color: #888;
     padding-bottom: 5px;
-    border-bottom: 1px solid darken($upper-footer-bg-color, 8);
+    border-bottom: 1px solid darken($footer-bg-color, 8);
   }
 
   ul {
@@ -407,6 +406,17 @@ html, body {
     .icon { margin-top: 10px; }
   }
 
+  .current-version {
+    clear: both;
+    text-align: right;
+    margin-top: 5px;
+    @include mconf-font-size(mini);
+    color: darken($footer-bg-color, 40);
+    a {
+      $c: darken($footer-bg-color, 50);
+      @include link-colors($c, $link-color-hover, $link-color-active);
+    }
+  }
 }
 
 #footer-logo {
@@ -423,24 +433,6 @@ html, body {
   }
 
   span { display: block; }
-}
-
-#lower-footer-wrapper {
-  padding: 10px 0;
-  background: $lower-footer-bg-color;
-  height: $footer-lower-height;
-}
-
-#lower-footer {
-  @include mconf-clearfix;
-  max-width: $contents-width;
-  margin: 0 auto;
-  color: #999;
-  @include mconf-font-size(small);
-  a { @include link-colors(desaturate($link-color, 10), $link-color-hover, $link-color-active); }
-
-  .current-version { float: left; }
-  .version-info { float: right; }
 }
 
 #page-header-wrapper {
@@ -702,7 +694,7 @@ html, body {
 }
 
 /* Simplified footer version */
-#upper-footer-wrapper.footer-simple {
+#footer-wrapper.footer-simple {
   background: none;
   border: 0;
   @include box-shadow(none);

@@ -72,8 +72,10 @@ $navbar-height: 43px;
 $subnav-bg-color: #eee;
 
 // global footer
-$upper-footer-bg-color: $light-gray;
-$lower-footer-bg-color: #fff;
+$footer-bg-color: $light-gray;
+// heights are needed to make it stick to the bottom
+$footer-height: 165px;
+$footer-total-height: $footer-height + 41px;
 
 // h1, h2, h3, ...
 $h-font-color: #404040;
@@ -87,11 +89,6 @@ $page-title-color: #505050;
 $z-index-navbar: 100;
 $z-index-dialog: 200;
 $z-index-tooltip: 999999;
-
-// footers - needed to make it stick to the bottom
-$footer-upper-height: 175px;
-$footer-lower-height: 30px;
-$footer-total-height: $footer-upper-height + $footer-lower-height + 60px;
 
 @mixin mconf-clearfix {
   @include clearfix;
